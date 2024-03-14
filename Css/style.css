@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Login Form */
+
+.login .login-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login .login-container .login-form{
+    text-align: center;
+    flex-basis: 60%;
+    margin-right: 35px;
+}
+
+
+.login .login-container .login-form form .box {
+    position: relative;
+    display: flex;  
+    align-items: center;  
+}
+
+.icon {
+    font-size: 20px; 
+    padding: 10px; 
+    color: rgba(28, 28, 28, 1);
+}
+.login .login-container .login-form form .box{
+    background-color: rgba(240, 237, 255, 0.8);
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 25px;
+    
+}
+
+.login .login-container .login-form form .box input {
+    flex: 1;  
+    border: 0px ;
+    
+    outline: none;
+    background-color: transparent;
+}
+
+.login .login-container .login-form form .btn{
+    padding: 15px 20px;
+    background: linear-gradient(99.78deg, #9181F4 -5.85%, #5038ED 109.55%);
+    color: white;
+    border: 0px;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login .login-container .login-form .other{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.login .login-container .login-form .other .line{
+    width: 70px;
+    margin: 0 7px ;
+    border: 1px solid rgba(240, 237, 255, 1);
+}
+
+.login .login-container .login-form .other-login .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    border: 1px solid rgba(240, 237, 255, 1);
+    border-radius: 25px;
+    padding: 10px ;
+    cursor: pointer;
+}
+
+.login .login-container .login-form .other-login .box span{
+    margin: 0 15px ;
+}
+
+.login .login-container .banner{
+    background-image: url(../img/Rectangle\ 4.png);
+    text-align: -webkit-center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 65%;
+    position: relative;
+    border-radius: 0 15px 15px 0;
+}
+
+.login .login-container .banner .card{
+    background: rgba(255, 255, 255, 0.21);
+    display: flex;
+    width: 70%;
+    height: 60%;
+    border-radius: 25px;
+    position: relative;
+}
+
+.login .login-container .banner .img{
+    position: absolute;
+    width: 45%;
+    right: 43px;
+    bottom: 122px;
+}
+.login .login-container .banner .group{
+    position: absolute;
+    left: 37px;
+    bottom: 140px;
+}
+
+.login .login-container .banner .img img{
+    width: 100%;
+}
+
+.login .login-container .banner .card h3{
+    margin: 20px ;
+    font-size: 23px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: start;
+    width: 45%;
+}
+
+/* Login Form */
+
+/* Responsive */
+
+@media (max-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+
+}
+
+@media (max-width:  800px){
+    .login .login-container .banner .card h3{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:  768px){
+    .login .login-container .login-form{
+        flex-basis: 100%;
+    }
+
+    .login .login-container .banner{
+        display: none;
+    }
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
